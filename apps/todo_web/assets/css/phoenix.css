@@ -14,6 +14,11 @@ body, form, ul, table {
   margin-bottom: 20px;
 }
 
+.help-block {
+  color: red
+}
+
+
 /* Phoenix flash messages */
 .alert:empty { display: none; }
 
@@ -22,12 +27,12 @@ body, form, ul, table {
   border-bottom: 1px solid #e5e5e5;
 }
 .logo {
-  width: 519px;
-  height: 71px;
-  display: inline-block;
-  margin-bottom: 1em;
-  background-image: url("/images/phoenix.png");
-  background-size: 519px 71px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 48px;
+  font-weight: 900;
+  
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

@@ -18,6 +18,8 @@ defmodule TodoWebWeb.Router do
 
     get "/", PageController, :index
     get "/tasks", TaskController, :list
+    get "/tasks/new", TaskController, :create
+    post "/tasks/new", TaskController, :add
     get "/tasks/:id", TaskController, :show
   end
 

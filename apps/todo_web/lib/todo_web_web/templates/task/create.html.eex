@@ -1,0 +1,24 @@
+<h1>Add Task</h1>
+<%= form_for @changeset, task_path(@conn, :add), fn f -> %>
+  <div class="form-group">
+    <%= label f, :title, "Title" %>
+    <%= text_input f, :title, class: "form-control" %>
+    <%= error_tag f, :title %>
+  </div>
+  <div class="form-group">
+    <%= label f, :due_date, "Due Date" %>
+    <%= text_input f, :due_date, class: "form-control", type: "datetime-local" %>
+    <%= error_tag f, :due_date %>
+  </div>
+  <div class="form-group">
+    <%= label f, :completed, "Yes" %>
+    <%= radio_button f, :completed, true %>
+    <%= error_tag f, :completed %>
+  </div>
+  <div class="form-group">
+    <%= label f, :completed, "No" %>
+    <%= radio_button f, :completed, false %>
+    <%= error_tag f, :completed %>
+  </div>
+  <%= submit "Add", class: "btn btn-primary pull-right" %>
+<%= end %>

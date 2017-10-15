@@ -18,8 +18,8 @@ defmodule Todo.TaskQueries do
       Repo.get(Tasks, id)
   end
 
-  def create(event) do
-    Repo.insert!(event)
+  def create(task) do
+    Repo.insert(task)
   end
 
 end
