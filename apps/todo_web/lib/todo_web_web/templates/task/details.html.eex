@@ -1,0 +1,2 @@
+<h1><%= @task.title %>  <small><%= format_date @task.due_date %></small></h1>
+<h3><%= @task.completed %></h3>

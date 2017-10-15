@@ -1,0 +1,7 @@
+<h1>All Tasks</h1>
+<%= render TodoWebWeb.SharedView, "count.html", list: @tasks %>
+<div class="list-group">
+  <%= for t <- @tasks do %>
+    <%= render "summary.html", task: t, conn: @conn %>
+  <%= end %>
+</div>

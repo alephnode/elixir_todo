@@ -1,0 +1,11 @@
+<a href="<%= task_path(@conn, :show, @task.id) %>">
+  <div class="list-group-item">
+    <h4 class="list-group-item-heading"><%= @task.title %></h4>
+    <span>
+      <span class="text-muted"><%= @task.completed %></span>
+      <span class="pull-right">
+        <strong><%= format_date @task.due_date %></strong>
+      </span>
+    </span>
+  </div>
+</a>
